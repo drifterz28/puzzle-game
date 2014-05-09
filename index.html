@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Widget test page</title>
+    <!-- everything in assests is for example only -->
+    <link href='assets/styles.css' rel='stylesheet'>
+    <style>
+        #puzzle {
+            border: 1px solid blue;
+            box-sizing: content-box;
+
+        }
+        .innerdiv {
+            border: 1px solid green;
+            background-repeat: no-repeat;
+            float: left;
+        }
+        .innerdiv.blank {
+            background: #000;
+            background-image: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="topsection">
+            <div class="innertube">
+                <h1>Header Content</h1>
+            </div>
+        </div>
+        <div class="leftcolumn">
+            <div class="innertube"> <b>Left Column</b>
+            </div>
+        </div>
+        <div class="contentwrapper">
+            <div class="contentcolumn">
+                <div class="innertube" id="test"> <b>Content Column: <em>Fixed</em></b>
+                    <!-- <script id="js-horoscope_widget" data-styles="default" data-partner="latimes" data-key="4e8ebcfd1c451aa8" src="widgets/horoscope-widget.js" async></script> -->
+                    <script id="js-puzzle_widget" src="puzzle.js" async></script>
+                </div>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="innertube">
+                <b>
+                    Right Column
+                </b>
+            </div>
+        </div>
+        <div class="footer">
+            <h1>Footer stuff</h1>
+        </div>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
+
+
